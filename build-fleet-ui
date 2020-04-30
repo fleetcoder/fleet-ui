@@ -2,3 +2,17 @@
 cd fleet-ui
 npm run-script build
 cd ..
+cp fleet-ui/dist/static/css/* public
+cp fleet-ui/dist/static/js/* public
+for file in fleet-ui/dist/static/js/app*js; do
+  sed -i "s/app.*js/${file##*/}/g" rp.ly.html
+done
+for file in fleet-ui/dist/static/js/vendor*js; do
+  sed -i "s/vendor.*js/${file##*/}/g" rp.ly.html
+done
+for file in fleet-ui/dist/static/js/manifest*js; do
+  sed -i "s/manifest.*js/${file##*/}/g" rp.ly.html
+done
+for file in fleet-ui/dist/static/css/*css; do
+  sed -i "s/app.*css/${file##*/}/g" rp.ly.html
+done
