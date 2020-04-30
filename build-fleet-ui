@@ -1,0 +1,4 @@
+#!/bin/sh
+cd fleet-ui
+npm run-script build
+cd ..
