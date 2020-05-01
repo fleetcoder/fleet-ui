@@ -10,10 +10,9 @@
 # install dependencies
 npm install
 
-# build for production with minification
-npm run-script build
-
-# copy css/js files to public/ and modify rp.ly.html
+# build for production 
+# and copy css/js files to public/ 
+# and modify rp.ly.html
 bash fleet-ui/build-fleet-ui
 ```
 
