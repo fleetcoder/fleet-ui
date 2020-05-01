@@ -19,7 +19,7 @@ if ls fleet-ui/dist/static/js/manifest*js 1> /dev/null 2>&1; then
     sed -i "s/manifest.*js/${file##*/}/g" rp.ly.html
   done
 fi
-if ls fleet-ui/dist/static/js/app*css 1> /dev/null 2>&1; then
+if ls fleet-ui/dist/static/css/app*css 1> /dev/null 2>&1; then
   for file in fleet-ui/dist/static/css/*css; do
     sed -i "s/app.*css/${file##*/}/g" rp.ly.html
   done
