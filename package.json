@@ -1,9 +1,8 @@
 {
-  "name": "fleet-ui",
+  "name": "fleetcoder-ui",
   "version": "1.0.0",
   "description": "The UI for Fleet",
-  "author": "Fleetcoder <info@fleetcoder.com>",
-  "private": false,
+  "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -13,6 +12,18 @@
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fleetcoder/fleet-ui.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fleetcoder/fleet-ui/issues"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/fleetcoder/fleet-ui",
+  "author": "Brian Hendrickson <bh@bh.ly>",
+  "private": false,
   "dependencies": {
     "@babel/core": "^7.9.6",
     "babel": "^6.23.0",
