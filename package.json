@@ -52,6 +52,7 @@
     "vue": "^2.5.2",
     "vue-audio-recorder": "^3.0.1",
     "vue-loader": "^15.9.1",
+    "vue-plyr": "^6.0.4",
     "vue-prism-editor": "^0.3.0",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.0.2",

@@ -10,6 +10,13 @@ import FileUpload from 'v-file-upload'
 import VueRouter from 'vue-router'
 import 'mint-ui/lib/style.css'
 import AudioRecorder from 'vue-audio-recorder'
+import VuePlyr from 'vue-plyr'
+Vue.use(VuePlyr, {
+  plyr: {
+    fullscreen: { enabled: false }
+  },
+  emit: ['ended']
+})
 Vue.use(MintUI)
 Vue.use(FileUpload)
 Vue.use(AudioRecorder)
