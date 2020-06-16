@@ -11,6 +11,7 @@ import VueRouter from 'vue-router'
 import 'mint-ui/lib/style.css'
 import AudioRecorder from 'vue-audio-recorder'
 import VuePlyr from 'vue-plyr'
+import VueClipboard from 'vue-clipboard2'
 Vue.use(VuePlyr, {
   plyr: {
     fullscreen: { enabled: false }
@@ -21,6 +22,7 @@ Vue.use(MintUI)
 Vue.use(FileUpload)
 Vue.use(AudioRecorder)
 Vue.use(VueRouter)
+Vue.use(VueClipboard)
 Vue.component(MUI.Radio.name, MUI.Radio)
 Vue.config.productionTip = false
 import VueResource from 'vue-resource'
@@ -34,3 +36,4 @@ window.MintUI = MintUI
 window.VueRouter = VueRouter
 window.FileUpload = FileUpload
 window.AudioRecorder = AudioRecorder
+window.VueClipboard = VueClipboard
